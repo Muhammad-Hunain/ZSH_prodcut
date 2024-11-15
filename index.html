@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative Navigation Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            background-color: #2c3e50;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 3rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav-items {
+            display: flex;
+            align-items: center;
+        }
+        .nav-items ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-items ul li {
+            margin-right: 2.5rem;
+            position: relative;
+        }
+        .nav-items ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Rest of your HTML content goes here -->
+</body>
+</html>  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>GamifyEmo</title>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+      <style>
+          body {
+              margin: 0;
+              font-family: 'Montserrat', sans-serif;
+              line-height: 1.6;
+              background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+              min-height: 100vh;
+          }
+          nav {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 0rem 3rem;
+              background-color: rgba(255, 255, 255, 0.9);
+              backdrop-filter: blur(15px);
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          }
+          .logo {
+              font-size: 2rem;
+              font-weight: 700;
+              color: #2c3e50;
+              text-transform: uppercase;
+              letter-spacing: 3px;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+          }
+          .nav-items {
+              display: flex;
+              align-items: center;
+          }
+          .nav-items ul {
+              display: flex;
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+          }
+          .nav-items ul li {
+              margin-right: 2.5rem;
+              position: relative;
+          }
+          .nav-items ul li a {
+              text-decoration: none;
+              color: #2c3e50;
+              font-weight: 600;
+              transition: all 0.3s ease;
+              padding: 0.5rem 0;
+              font-size: 1.1rem;
+          }
+          .nav-items ul li a::after {
+              content: '';
+              position: absolute;
+              width: 0;
+              height: 3px;
+              bottom: -5px;
+              left: 0;
+              background-color: #3498db;
+              transition: width 0.3s ease;
+          }
+          .nav-items ul li a:hover::after {
+              width: 100%;
+          }
+          .nav-items ul li a:hover {
+              color: #065ac1;
+          }
+          .search-bar {
+              margin-left: 1.5rem;
+              position: relative;
+          }
+          .search-bar input {
+              padding: 0.7rem 3rem 0.7rem 1.5rem;
+              border: 2px solid #3498db;
+              border-radius: 30px;
+              font-size: 1rem;
+              background-color: rgba(255, 255, 255, 0.9);
+              transition: all 0.3s ease;
+              width: 250px;
+              box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+          }
+          .search-bar input:focus {
+              outline: none;
+              background-color: rgba(255, 255, 255, 1);
+              box-shadow: 0 0 20px rgba(52, 152, 219, 0.6);
+              width: 300px;
+          }
+          .search-bar::after {
+              content: '🔍';
+              position: absolute;
+              right: 15px;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 1.2rem;
+              color: #3498db;
+              pointer-events: none;
+          }
+          .menu-toggle {
+              display: none;
+              cursor: pointer;
+              font-size: 1.5rem;
+              color: #3498db;
+          }
+          @media screen and (max-width: 1024px) {
+              nav {
+                  padding: 1rem 2rem;
+              }
+              .logo {
+                  font-size: 1.5rem;
+              }
+              .nav-items ul li {
+                  margin-right: 1.5rem;
+              }
+              .nav-items ul li a {
+                  font-size: 1rem;
+              }
+              .search-bar input {
+                  width: 200px;
+              }
+              .search-bar input:focus {
+                  width: 250px;
+              }
+          }
+          @media screen and (max-width: 768px) {
+              nav {
+                  flex-direction: column;
+                  align-items: flex-start;
+              }
+              .nav-items {
+                  display: none;
+                  width: 100%;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  margin-top: 1rem;
+              }
+              .nav-items.active {
+                  display: flex;
+              }
+              .nav-items ul {
+                  flex-direction: column;
+                  width: 100%;
+              }
+              .nav-items ul li {
+                  margin-right: 0;
+                  margin-bottom: 1rem;
+              }
+              .search-bar {
+                  margin-left: 0;
+                  margin-top: 1rem;
+                  width: 100%;
+                  display: block;
+              }
+              .search-bar input {
+                  width: 100%;
+                  box-sizing: border-box;
+              }
+              .search-bar input:focus {
+                  width: 100%;
+              }
+              .menu-toggle {
+                  display: block;
+                  position: absolute;
+                  top: 3.5rem;
+                  right: 2rem;
+                  
+              }
+          }
+      </style>
+  </head>
+  <body>
+      <nav>
+          <div class="logo">
+              
+                <a href="#">
+                        <img src="./image.png" alt="Company Logo" width="150px">
+                       </a>
+              
+          </div>
+          <div class="menu-toggle" style="font-size: 2.5em;">☰</div>
+          <div class="nav-items">
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#testing">Testing</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  
+                                    <!-- <li class="dropdown">
+                                        <a href="#" class="dropbtn">Services ▼</a>
+                                        <div class="dropdown-content">
+                                            <a href="#">Service 1</a>
+                                            <a href="#">Service 2</a>
+                                            <a href="#">Service 3</a>
+                                        </div>
+                                    </li>
+                                    <style>
+                                        .dropdown {
+                                            position: relative;
+                                            display: inline-block;
+                                        }
+                                        
+                                        .dropdown-content {
+                                            display: none;
+                                            position: absolute;
+                                            background-color: #f9f9f9;
+                                            min-width: 160px;
+                                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                                            z-index: 1;
+                                        }
+                                        
+                                        .dropdown-content a {
+                                            color: black;
+                                            padding: 12px 16px;
+                                            text-decoration: none;
+                                            display: block;
+                                        }
+                                        
+                                        .dropdown-content a:hover {
+                                            background-color: #f1f1f1;
+                                        }
+                                        
+                                        .dropdown:hover .dropdown-content {
+                                            display: block;
+                                        }
+                                        
+                                        @media screen and (max-width: 768px) {
+                                            .dropdown-content {
+                                                position: static;
+                                                width: 100%;
+                                                background-color: #f9f9f9;
+                                                padding-left: 20px;
+                                            }
+                                        }
+                                    </style> -->
+                  
+              </ul>
+              <div class="search-bar">
+                  <input type="text" placeholder="Explore...">
+              </div>
+          </div>
+      </nav>
+
+
+      <section class="hero" id="home">
+          <div class="hero-content">
+              <h1>Gaming on Earth</h1>
+              <p>Welcome to Zed-Esh! 🎮 Unleash your creativity with our innovative gaming events designed for students of all ages. Explore, create, and enjoy a world of fun and learning!</p>
+              <p>At Zed-Esh, we specialize in bringing interactive and engaging gaming experiences to schools. From coding-free game development workshops to immersive learning events, our programs are tailored to ignite the imagination of young minds</p>
+             
+
+              <a href="#" class="cta-button" style="background-color: white; color: #065ac1;">Explore Our Vision</a>
+          </div>
+          <div class="hero-image">
+            <img src="./undraw_video_game_night_8h8m.svg" alt="Innovation Concept Illustration">          
+          </div> 
+             </section>
+
+      <style>
+          .hero {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 2rem 2rem;
+              background: linear-gradient(135deg, #0077be, #065ac1,#01162f);
+              color: white;
+              overflow: hidden;
+          }
+
+          .hero-content {
+              flex: 1;
+              max-width: 50%;
+              animation: fadeInLeft 1s ease-out;
+          }
+
+          .hero h1 {
+              font-size: 3.5rem;
+              margin-bottom: 1rem;
+              text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+          }
+
+          .hero p {
+              font-size: 1.2rem;
+              margin-bottom: 1rem;
+              line-height: 1.6;
+          }
+
+          .cta-button {
+              display: inline-block;
+              padding: 1rem 2rem;
+              background-color: #3a1c71;
+              color: white;
+              text-decoration: none;
+              border-radius: 50px;
+              font-weight: bold;
+              font-size: 1.2rem;
+              transition: all 0.3s ease;
+              box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+          }
+
+          .cta-button:hover {
+              background-color: #d76d77;
+              transform: translateY(-3px);
+              box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+          }
+
+          .hero-image {
+              flex: 1;
+              max-width: 50%;
+              text-align: right;
+              animation: fadeInRight 1s ease-out;
+          }
+
+          .hero-image img {
+              max-width: 100%;
+              height: 400px;
+              border-radius: 15px;
+              box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease;
+          }
+
+          .hero-image img:hover {
+              transform: scale(1.05);
+          }
+
+          @keyframes fadeInLeft {
+              from {
+                  opacity: 0;
+                  transform: translateX(-50px);
+              }
+              to {
+                  opacity: 1;
+                  transform: translateX(0);
+              }
+          }
+
+          @keyframes fadeInRight {
+              from {
+                  opacity: 0;
+                  transform: translateX(50px);
+              }
+              to {
+                  opacity: 1;
+                  transform: translateX(0);
+              }
+          }
+
+          @media (max-width: 768px) {
+              .hero {
+                  flex-direction: column;
+                  text-align: center;
+                  padding: 4rem 2rem;
+              }
+
+              .hero-content, .hero-image {
+                  max-width: 100%;
+              }
+
+              .hero-image {
+                  margin-top: 3rem;
+              }
+
+              .hero h1 {
+                  font-size: 3rem;
+              }
+
+              .hero p {
+                  font-size: 1.2rem;
+              }
+          }
+      </style>
+
+
+        <section class="psychological-test" id="testing">
+            <h2>Psychological Test</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-front">
+                        <h3>screening Test</h3>
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643" alt="Personality Assessment Illustration" width="300" height="200">
+                    </div>
+                    <div class="card-back">
+                        <p>Discover your unique personality traits and understand yourself better.</p>
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Personality Assessment Illustration" width="300" height="200">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-front">
+                        <h3>Blended Learning </h3>
+                        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d" alt="Emotional Intelligence Illustration" width="300" height="200">
+                    </div>
+                    <div class="card-back">
+                        <p>Evaluate your ability to understand and manage emotions effectively.</p>
+                        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d" alt="Emotional Intelligence Illustration" width="300" height="200">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-front">
+                        <h3><a href="./GamifyTest.html" style="text-decoration: none; color:#0077be">Gamified Learning</a></h3>
+                        <img src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06" alt="Cognitive Abilities Illustration" width="300" height="200">
+                    </div>
+                    <div class="card-back">
+                        <h3><a href="./GamifyTest.html" style="text-decoration: none; color:#fff">Gamified Learning</a></h3>
+                        <img src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06" alt="Cognitive Abilities Illustration" width="300" height="200">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            .psychological-test {
+                padding: 4rem 2rem;
+                text-align: center;
+                background-color: #f8f9fa;
+            }
+
+            .psychological-test h2 {
+                font-size: 2.8rem;
+                color: #0077be;
+                margin-bottom: 2.5rem;
+                animation: fadeInLeft 1s ease-out;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            }
+
+            .card-container {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 3rem;
+            }
+
+            .card {
+                width: 350px;
+                height: 450px;
+                perspective: 1000px;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+                margin: 0 1.5rem 3rem 1.5rem;
+            }
+
+            .card:hover {
+                transform: translateY(-10px);
+            }
+
+            .card-front, .card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                transition: transform 0.6s; 
+                border-radius: 15px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 1.5rem;
+            }
+
+            .card-front {
+                background-color: #ffffff;
+                background-image: linear-gradient(135deg, #f5f7fa 0%);
+                }
+
+            .card-back {
+                background-color: #065ac1;
+                background-image: linear-gradient(135deg, #065ac1 0%, #01162f 100%);
+                color: #ffffff;
+                transform: rotateY(180deg);
+            }
+
+            .card:hover .card-front {
+                transform: rotateY(180deg);
+            }
+
+            .card:hover .card-back {
+                transform: rotateY(0deg);
+            }
+
+            .card h3 {
+                font-size: 1.8rem;
+                margin-bottom: 1.5rem;
+                color: #0077be;
+                text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            }
+
+            .card img {
+                width: 90%;
+                height: auto;
+                margin-bottom: 1.5rem;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .card:hover img {
+                transform: scale(1.05);
+            }
+
+            .card p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                padding: 0 1rem;
+            }
+
+            @media (max-width: 768px) {
+                .card-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .card {
+                    width: 90%;
+                    max-width: 350px;
+                    margin-bottom: 2rem;
+                }
+            }
+        </style>
+
+
+
+
+
+
+
+
+        
+            <section id="psychology-research" class="research-section">
+                <div class="container" id="about">
+                    <h2>About Us</h2>
+                    <p class="intro">Unraveling the mysteries of the human mind</p>
+                    <!-- <div class="research-areas">
+                        <h3>Key Research Areas:</h3>
+                        <div class="research-grid">
+                            <div class="research-item">
+                                <h4>Cognitive Psychology</h4>
+                                <p>Investigating mental processes such as perception, memory, and decision-making.</p>
+                            </div>
+                            <div class="research-item">
+                                <h4>Social Psychology</h4>
+                                <p>Examining how individuals interact with and influence one another in various social contexts.</p>
+                            </div>
+                            <div class="research-item">
+                                <h4>Developmental Psychology</h4>
+                                <p>Studying psychological growth and change across the lifespan.</p>
+                            </div>
+                            <div class="research-item">
+                                <h4>Clinical Psychology</h4>
+                                <p>Researching mental health disorders and developing effective therapeutic interventions.</p>
+                            </div>
+                            <div class="research-item">
+                                <h4>Neuroscience</h4>
+                                <p>Exploring the biological basis of psychological phenomena and brain-behavior relationships.</p>
+                            </div>
+                            <div class="research-item">
+                                <h4>Personality Psychology</h4>
+                                <p>Investigating individual differences in behavior, thoughts, and emotions.</p>
+                            </div>
+                            <div class="research-item">
+                                <h4>Health Psychology</h4>
+                                <p>Studying the psychological factors influencing health, illness, and healthcare.</p>
+                            </div>
+                            <div class="research-item">
+                                <h4>Industrial-Organizational Psychology</h4>
+                                <p>Applying psychological principles to workplace settings.</p>
+                            </div>
+                            <div class="research-item">
+                                <h4>Educational Psychology</h4>
+                                <p>Examining learning processes and educational strategies.</p>
+                            </div>
+                            <div class="research-item">
+                                <h4>Forensic Psychology</h4>
+                                <p>Applying psychological knowledge to legal and criminal justice systems.</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="research-methods">
+                        <h3>Research Methods:</h3>
+                        <div class="methods-grid">
+                            <div class="method-item">Experimental studies</div>
+                            <div class="method-item">Longitudinal research</div>
+                            <div class="method-item">Cross-sectional surveys</div>
+                            <div class="method-item">Qualitative interviews</div>
+                            <div class="method-item">Neuroimaging techniques</div>
+                            <div class="method-item">Meta-analyses</div>
+                        </div>
+                    </div> -->
+                    <div class="impact">
+                        <h3>Our Mission</h3>
+                        <p>Our mission at Zed-Esh is to empower students by blending education with entertainment. We believe in fostering creativity and critical thinking through hands-on experiences in game development and interactive learning.
+                        </p>
+                    </div>
+
+                    <div class="impact">
+                        <h3>Our Vision</h3>
+                        <p>We envision a world where students not only play games but also understand the art and science behind them. Through our events, we aim to inspire the next generation of creators and innovators.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <style>
+                .research-section {
+                    background: linear-gradient(135deg, #0077be 0%, #065ac1 50%, #01162f 100%);
+                    padding: 0.5rem 0;
+                    color: #333;
+                }
+                .research-section .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 0 1rem;
+                }
+                .research-section h2 {
+                    font-size: 3rem;
+                    color: #fff;
+                    margin-bottom: 1rem;
+                    text-align: center;
+                    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+                }
+                .research-section .intro {
+                    font-size: 1.5rem;
+                    text-align: center;
+                    color: #fff;
+                    margin-bottom: 3rem;
+                    font-style: italic;
+                }
+                .research-section p {
+                    font-size: 1.1rem;
+                    line-height: 1.6;
+                    color: #fff;
+                    margin-bottom: 1.5rem;
+                }
+                .research-areas, .research-methods, .impact {
+                    background-color: rgba(255, 255, 255, 0.9);
+                    border-radius: 15px;
+                    padding: 2rem;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                    transition: transform 0.3s ease;
+                    margin-bottom: 2rem;
+                }
+                .research-areas:hover, .research-methods:hover, .impact:hover {
+                    transform: translateY(-5px);
+                }
+                .research-areas h3, .research-methods h3, .impact h3 {
+                    font-size: 2rem;
+                    color: #0077be;
+                    margin-bottom: 1.5rem;
+                    text-align: center;
+                }
+                .research-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    gap: 1.5rem;
+                }
+                .research-item {
+                    background-color: #fff;
+                    border-radius: 10px;
+                    padding: 1.5rem;
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                }
+                .research-item h4 {
+                    font-size: 1.3rem;
+                    color: #333;
+                    margin-bottom: 1rem;
+                }
+                .research-item p {
+                    font-size: 1rem;
+                    color: #666;
+                }
+                .methods-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 1rem;
+                }
+                .method-item {
+                    background-color: #fff;
+                    border-radius: 8px;
+                    padding: 1rem;
+                    text-align: center;
+                    font-size: 1.1rem;
+                    color: #444;
+                    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+                }
+                .impact {
+                    background-color: rgba(255, 255, 255, 0.95);
+                }
+                .impact p{
+                    color: #000;
+                }
+                @media (max-width: 768px) {
+                    .research-section h2 {
+                        font-size: 2.5rem;
+                    }
+                    .research-section .intro {
+                        font-size: 1.3rem;
+                    }
+                    .research-areas h3, .research-methods h3, .impact h3 {
+                        font-size: 1.8rem;
+                    }
+                    .research-grid, .methods-grid {
+                        grid-template-columns: 1fr;
+                    }
+                }
+            </style>
+        
+
+
+            
+
+
+<style>
+    .contact-section {
+        padding: 80px 0;
+        background-color: #f8f9fa;
+    }
+
+    .contact-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .contact-info {
+        flex: 1;
+        padding-right: 50px;
+    }
+
+    .contact-info h2 {
+        font-size: 2.5rem;
+        color: #0077be;
+        margin-bottom: 20px;
+    }
+
+    .contact-info p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #666;
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        flex: 1;
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #0077be;
+    }
+
+    .submit-btn {
+        background-color: #0077be;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+        background-color: #005c91;
+    }
+
+    @media (max-width: 768px) {
+        .contact-container {
+            flex-direction: column;
+        }
+
+        .contact-info {
+            padding-right: 0;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .contact-form {
+            width: 100%;
+        }
+    }
+</style>
+
+<section class="contact-section" id="contact">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>Have questions about our research? Want to collaborate with us? We'd love to hear from you. Fill out the form, and we'll get back to you as soon as possible.</p>
+        </div>
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+                         
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are dedicated to advancing scientific research and fostering collaboration across disciplines to solve complex challenges.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testing">Tesing</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@gamifyEmo.com</p>
+                <p>Phone: +92 3243688380</p>
+                <p>Address: Latifabad Unit # 06 Hyderabad</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 <a href="https://digipexsolutions.com/">Digipex Solutions </a>. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        background-color: #0561C1;
+        color: #ffffff;
+        padding: 60px 0 20px 0;
+        margin-top: 80px;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .footer-section h3 {
+        color: #ffffff;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+
+    .footer-section p {
+        color: #cccccc;
+        line-height: 1.6;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-section ul li a {
+        color: #cccccc;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-section ul li a:hover {
+        color: #ffffff;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid #fff;
+    }
+
+    .footer-bottom p {
+        color: #fff;
+        font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+        .footer-content {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .footer-section {
+            text-align: center;
+        }
+    }
+</style>
+
+                            
+      <script>
+          const menuToggle = document.querySelector('.menu-toggle');
+          const navItems = document.querySelector('.nav-items');
+
+          menuToggle.addEventListener('click', () => {
+              navItems.classList.toggle('active');
+          });
+      </script>
+  </body>
+  </html>

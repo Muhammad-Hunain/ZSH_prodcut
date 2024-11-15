@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative Navigation Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            background-color: #2c3e50;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 3rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav-items {
+            display: flex;
+            align-items: center;
+        }
+        .nav-items ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-items ul li {
+            margin-right: 2.5rem;
+            position: relative;
+        }
+        .nav-items ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Rest of your HTML content goes here -->
+</body>
+</html>  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>GamifyEmo</title>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+      <style>
+          body {
+              margin: 0;
+              font-family: 'Montserrat', sans-serif;
+              line-height: 1.6;
+              background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+              min-height: 100vh;
+          }
+          nav {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 0rem 3rem;
+              background-color: rgba(255, 255, 255, 0.9);
+              backdrop-filter: blur(15px);
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          }
+          .logo {
+              font-size: 2rem;
+              font-weight: 700;
+              color: #2c3e50;
+              text-transform: uppercase;
+              letter-spacing: 3px;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+          }
+          .nav-items {
+              display: flex;
+              align-items: center;
+          }
+          .nav-items ul {
+              display: flex;
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+          }
+          .nav-items ul li {
+              margin-right: 2.5rem;
+              position: relative;
+          }
+          .nav-items ul li a {
+              text-decoration: none;
+              color: #2c3e50;
+              font-weight: 600;
+              transition: all 0.3s ease;
+              padding: 0.5rem 0;
+              font-size: 1.1rem;
+          }
+          .nav-items ul li a::after {
+              content: '';
+              position: absolute;
+              width: 0;
+              height: 3px;
+              bottom: -5px;
+              left: 0;
+              background-color: #3498db;
+              transition: width 0.3s ease;
+          }
+          .nav-items ul li a:hover::after {
+              width: 100%;
+          }
+          .nav-items ul li a:hover {
+              color: #065ac1;
+          }
+          .search-bar {
+              margin-left: 1.5rem;
+              position: relative;
+          }
+          .search-bar input {
+              padding: 0.7rem 3rem 0.7rem 1.5rem;
+              border: 2px solid #3498db;
+              border-radius: 30px;
+              font-size: 1rem;
+              background-color: rgba(255, 255, 255, 0.9);
+              transition: all 0.3s ease;
+              width: 250px;
+              box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+          }
+          .search-bar input:focus {
+              outline: none;
+              background-color: rgba(255, 255, 255, 1);
+              box-shadow: 0 0 20px rgba(52, 152, 219, 0.6);
+              width: 300px;
+          }
+          .search-bar::after {
+              content: '🔍';
+              position: absolute;
+              right: 15px;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 1.2rem;
+              color: #3498db;
+              pointer-events: none;
+          }
+          .menu-toggle {
+              display: none;
+              cursor: pointer;
+              font-size: 1.5rem;
+          }
+          @media screen and (max-width: 1024px) {
+              nav {
+                  padding: 1rem 2rem;
+              }
+              .logo {
+                  font-size: 1.5rem;
+              }
+              .nav-items ul li {
+                  margin-right: 1.5rem;
+              }
+              .nav-items ul li a {
+                  font-size: 1rem;
+              }
+              .search-bar input {
+                  width: 200px;
+              }
+              .search-bar input:focus {
+                  width: 250px;
+              }
+          }
+          @media screen and (max-width: 768px) {
+              nav {
+                  flex-direction: column;
+                  align-items: flex-start;
+              }
+              .nav-items {
+                  display: none;
+                  width: 100%;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  margin-top: 1rem;
+              }
+              .nav-items.active {
+                  display: flex;
+              }
+              .nav-items ul {
+                  flex-direction: column;
+                  width: 100%;
+              }
+              .nav-items ul li {
+                  margin-right: 0;
+                  margin-bottom: 1rem;
+              }
+              .search-bar {
+                  margin-left: 0;
+                  margin-top: 1rem;
+                  width: 100%;
+                  display: block;
+              }
+              .search-bar input {
+                  width: 100%;
+                  box-sizing: border-box;
+              }
+              .search-bar input:focus {
+                  width: 100%;
+              }
+              .menu-toggle {
+                  display: block;
+                  position: absolute;
+                  top: 1.5rem;
+                  right: 2rem;
+              }
+          }
+      </style>
+  </head>
+  <body>
+      <nav>
+          <div class="logo">
+              
+                <a href="#">
+                        <img src="./image.png" alt="Company Logo" width="150px">
+                       </a>
+              
+          </div>
+          <div class="menu-toggle">☰</div>
+          <div class="nav-items">
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Testing</a></li>
+                  <li><a href="#">Connect</a></li>
+              </ul>
+              <div class="search-bar">
+                  <input type="text" placeholder="Explore...">
+              </div>
+          </div>
+      </nav>
+
+
+
+      
+      <div class="game-cards-container">
+          <a href="https://breshna.io/api/games/choiceChamp/index.html?template_id=670f4218c5a3ed48710c053e" class="game-card">
+              <img src="https://play-lh.googleusercontent.com/WNWZaxi9RdJKe2GQM3vqXIAkk69mnIl4Cc8EyZcir2SKlVOxeUv9tZGfNTmNaLC717Ht" alt="Roblox">
+              <div class="card-content">
+                  <h3>Choice Champ</h3>
+                  <p>Join millions of players in this creative gaming platform!</p>
+              </div>
+          </a>
+          
+          <a href="https://breshna.io/api/games/picAndPlay/index.html?template_id=67109069c5a3ed48710d8d8a" class="game-card">
+              <img src="https://image.api.playstation.com/vulcan/img/cfn/11307x4B5WLoVoIUtdewG4uJ_YuDRTwBxQy0qP8ylgazLLc01PBxbsFG1pGOWmqhZsxnNkrU3GXbdXIowBAstzlrhtQ4LCI4.png" alt="Minecraft">
+              <div class="card-content">
+                  <h3>Pic & Play</h3>
+                  <p>Build, explore, and survive in this blocky adventure!</p>
+              </div>
+          </a>
+      
+          <a href="https://breshna.io/api/games/jumbleJoy/index.html?template_id=6711f2b4c5a3ed48710efa66" class="game-card">
+              <img src="https://cdn1.epicgames.com/offer/fn/23BR_C4S1_EGS_Launcher_Blade_2560x1440_2560x1440-70d48b6b897fd8509891ebeb1c160117" alt="Fortnite">
+              <div class="card-content">
+                  <h3>Jumble Joy</h3>
+                  <p>Battle royale action with unique building mechanics!</p>
+              </div>
+          </a>
+
+          <a href="https://breshna.io/api/games/clueCrawl/index.html?template_id=67133db6c5a3ed487110cfa1" class="game-card">
+              <img src="https://play-lh.googleusercontent.com/VHB9bVB8cTcnqwnu0nJqKYbiutRclnbGxTpwnayKB4vMxZj8pk1220Rg-6oQ68DwAkqO" alt="Among Us">
+              <div class="card-content">
+                  <h3>Clew & Crawl</h3>
+                  <p>Find the impostor in this multiplayer deduction game!</p>
+              </div>
+          </a>
+
+          <a href="https://breshna.io/api/games/cornerCuts/index.html?template_id=671203fcc5a3ed48710f1b86" class="game-card">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/1113780/header.jpg" alt="Genshin Impact">
+              <div class="card-content">
+                  <h3>Corner Cuts</h3>
+                  <p>Explore a vast magical world in this action RPG!</p>
+              </div>
+          </a>
+
+          <a href="https://breshna.io/api/games/runAndCatch/index.html?template_id=6713480dc5a3ed487110def5" class="game-card">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/1172470/capsule_616x353.jpg" alt="Fall Guys">
+              <div class="card-content">
+                  <h3>Run & Catch </h3>
+                  <p>Compete in crazy obstacle courses with colorful beans!</p>
+              </div>
+          </a>
+
+          <a href="https://breshna.io/api/games/mythbuster/index.html?template_id=67134c27c5a3ed487110e6a8" class="game-card">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/1172470/header.jpg" alt="Apex Legends">
+              <div class="card-content">
+                  <h3>Myth Buster</h3>
+                  <p>Fast-paced battle royale with unique hero abilities!</p>
+              </div>
+          </a>
+
+          <a href="https://breshna.io/api/games/cornerCuts/index.html?template_id=671203fcc5a3ed48710f1b86" class="game-card">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/252950/capsule_616x353.jpg" alt="Rocket League">
+              <div class="card-content">
+                  <h3>Guess the Word</h3>
+                  <p>Soccer meets racing in this high-flying sports game!</p>
+              </div>
+          </a>
+
+          <a href="https://breshna.io/api/games/crossBoss/index.html?template_id=6713685dc5a3ed48711115ea" class="game-card">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/1172470/capsule_616x353.jpg" alt="Valorant">
+              <div class="card-content">
+                  <h3>Cross Boss</h3>
+                  <p>Tactical shooter with unique agent abilities!</p>
+              </div>
+          </a>      </div>
+      
+      <style>
+      .game-cards-container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 2rem;
+          padding: 2rem;
+          max-width: 1200px;
+          margin: 0 auto;
+      }
+      
+      .game-card {
+          background: #ffffff;
+          border-radius: 15px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          width: 300px;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          text-decoration: none;
+          color: inherit;
+      }
+      
+      .game-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      }
+      
+      .game-card img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+      }
+      
+      .card-content {
+          padding: 1.5rem;
+      }
+      
+      .card-content h3 {
+          margin: 0 0 0.5rem 0;
+          color: #2c3e50;
+          font-size: 1.5rem;
+      }
+      
+      .card-content p {
+          margin: 0;
+          color: #666;
+          font-size: 0.9rem;
+          line-height: 1.4;
+      }
+      
+      @media (max-width: 768px) {
+          .game-card {
+              width: 100%;
+              max-width: 350px;
+          }
+      }
+      </style>
+      
+
+      <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>We are dedicated to advancing scientific research and fostering collaboration across disciplines to solve complex challenges.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testing">Tesing</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@gamifyEmo.com</p>
+                    <p>Phone: +92 3243688380</p>
+                    <p>Address: Latifabad Unit # 06 Hyderabad</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 <a href="https://digipexsolutions.com/">Digipex Solutions </a>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <style>
+        .footer {
+            background-color: #0561C1;
+            color: #ffffff;
+            padding: 60px 0 20px 0;
+            margin-top: 80px;
+        }
+    
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+    
+        .footer-section h3 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+    
+        .footer-section p {
+            color: #cccccc;
+            line-height: 1.6;
+        }
+    
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+    
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+    
+        .footer-section ul li a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+    
+        .footer-section ul li a:hover {
+            color: #ffffff;
+        }
+    
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #fff;
+        }
+    
+        .footer-bottom p {
+            color: #fff;
+            font-size: 0.9em;
+        }
+    
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+    
+            .footer-section {
+                text-align: center;
+            }
+        }
+    </style>
+
+
+      <script>
+          const menuToggle = document.querySelector('.menu-toggle');
+          const navItems = document.querySelector('.nav-items');
+
+          menuToggle.addEventListener('click', () => {
+              navItems.classList.toggle('active');
+          });
+      </script>
+  </body>
+  </html>

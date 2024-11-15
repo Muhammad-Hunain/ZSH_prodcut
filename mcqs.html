@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQS - Research Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .question {
+            margin-bottom: 30px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .question h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .options {
+            display: grid;
+            gap: 15px;
+        }
+        label {
+            display: block;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        label:hover {
+            background-color: #e9ecef;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 30px auto 0;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MCQS Research Data Quiz</h1>
+        <div id="quiz">
+            <div class="question">
+                <h3>1. What is the primary purpose of a research data cover form?</h3>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q1" value="a">
+                        To provide a summary of the research project
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b">
+                        To collect personal information about researchers
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c">
+                        To describe the data collected during research
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="d">
+                        All of the above
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>2. Which of the following is NOT typically included in a research data description?</h3>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q2" value="a">
+                        Data format
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b">
+                        Data size
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c">
+                        Researcher's favorite color
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="d">
+                        Data collection period
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>3. Why is it important to specify the research field in a data cover form?</h3>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q3" value="a">
+                        To categorize the research for easier archiving
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="b">
+                        To determine the researcher's expertise
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c">
+                        To allocate funding based on the field
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="d">
+                        To limit access to the research data
+                    </label>
+                </div>
+            </div>
+        </div>
+        <button onclick="submitQuiz()">Submit Quiz</button>
+    </div>
+    <script>
+        function submitQuiz() {
+            alert("Quiz submitted! This is a placeholder. In a real application, you would process the answers here.");
+        }
+    </script>
+</body>
+</html>
